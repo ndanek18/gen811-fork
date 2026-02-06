@@ -1,6 +1,7 @@
 # Lab3 - 2/16/24
 
 ## Pre-lab
+add text here
 
 1. Open up vscode
 2. Control + shift + 'p' to open command prompt (command + shift + p on apple)
