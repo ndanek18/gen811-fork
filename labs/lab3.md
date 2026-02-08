@@ -1,8 +1,6 @@
 # Lab3 - 2/6/26
 
 ## Pre-lab
-new text 
-
 
 ## Before lab begins
 1. Open up vscode
@@ -60,13 +58,51 @@ Seperate notes by an empty line, or they'll get pasted together
 
 The pound sign is used for 'sections'. A single pound (or hashtag) in front of a word makes it appear bigger/bold to show a new section. See below
 
-# My Notes:
+# My Notes: Feb 6
 
-To change directories, use 'cd' and then hit tab two times to see directories in my current directory
+- To change directories, use 'cd' and then hit tab two times to see directories in my current directory
+- pwd = print working directory, shows what folder you are working in
+- ls = list everything in that folder
+- clear = cleans up terminal
+- if using quotes: make sure you remember to close them, 
+    or you can click control c to get out
+- control c = cancels current command
+- ls -F = only shows files in that folder that you can change directories into
+- man ls = lists the manual, hit q to get out
+- ls -lrth = lists info with most recent files on the bottom
+- hitting tab does autocomplete! use this! tab as much as possible to prevent typos!!
+- head file_name = shows first few lines of file
+- cd ../ takes you one step back up
+- cd ../../ takes your two steps back up
+- cd ../../../ takes you three steps back up out of that folder
 
+- cd ~ brings you to home directory
+- cd $HOME = can also bring you home
+- echo $HOME = shows path of HOME
 
+- pressing up arrow allows you to scroll through your previous lines
 
+- history = prints out all history of commands
 
+- grep = searches through file and returns only lines you're searching for
+
+- @ is a special character so need to put it in quotes 
+
+- grep '@' SRR097977.fastq = pulls out all of the lines in that file that start with @
+- grep '@SRR' SRR097977.fastq = more defined searches
+(put what you are searching for right after grep, then the file name)
+
+- grep '@SRR097977' SRR097977.fastq  > headerlines.txt = puts the headers all into a text file called headerlines
+
+- ls *fastq = list all files that have fastq at the end
+- ls * txt = lists only txt files 
+
+- wc = word count
+
+- ls /bin/*o | wc -l = counts the number of lines that end in o
+- ls /bin/*a* | wc -l = counts the number of lines that contain the letter a
+
+- ls /bin/ | grep '^c' = all lines that start with letter c
 
 ### Complete the questions below when intrstructed. Push the changes to this document to recive credit for attending the lab
 
@@ -97,7 +133,7 @@ Start with the letter c:
  or ls /bin/ | grep '^c' | wc -l
 94
 
-contain with the letter a: ls /bin/*a* | wc -l
+contain the letter a: ls /bin/*a* | wc -l
 633
 
 end with the letter o: ls /bin/*o | wc -l
