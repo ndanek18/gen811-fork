@@ -1,6 +1,8 @@
 # Lab3 - 2/6/26
 
 ## Pre-lab
+new text 
+
 
 ## Before lab begins
 1. Open up vscode
