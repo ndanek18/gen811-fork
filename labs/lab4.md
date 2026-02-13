@@ -3,7 +3,7 @@ title: Working with Files and Directories
 teaching: 30
 exercises: 15
 ---
-lab 4
+change to lab 4 
 # Lab4 - 2/13/26
 
 ::::::::::::::::::::::::::::::::::::::: objectives

@@ -45,3 +45,5 @@ ls /bin/*o | wc -l = counts the number of lines that end in o
 ls /bin/*a* | wc -l = counts the number of lines that contain the letter a
 
 ls /bin/ | grep '^c' = all lines that start with letter c
+
+notes lab 2/13
