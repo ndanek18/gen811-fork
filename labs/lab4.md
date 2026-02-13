@@ -65,15 +65,21 @@ what will `ls ../backup` display?
 ### EXERCISE 4: FINDING HIDDEN DIRECTORIES
 First navigate to the shell_data directory. There is a hidden directory within this directory. Explore the options for ls to find out how to see hidden directories. List the contents of the directory and identify the name of the text file in that directory.
 
+
 Hint: hidden files and folders in Unix start with ., for example .my_hidden_directory
 
-What is the hidden file name in the hidden directory?
+What is the hidden file name in the hidden directory? .hidden
+code: ls -la
+
 
 ### EXERCISE 5: HISTORY
 Find the line number in your history for the command that listed all the .sh files in /usr/bin. Rerun that command.
 
+
+
 ### EXERCISE 6: FILE CONTENTS
 Print out the contents of the ~/shell_data/untrimmed_fastq/SRR097977.fastq file. What is the last line of the file?
+
 
 ### EXERCISE 7: PATHS
 From your home directory, and without changing directories, use one short command to print the contents of all of the files in the ~/shell_data/untrimmed_fastq directory.

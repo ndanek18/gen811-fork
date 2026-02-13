@@ -1,4 +1,4 @@
-notes lab 2/6
+## notes lab 2/6
 pwd = print working directory, shows what folder you are working in
 ls = list everything in that folder
 clear = cleans up terminal
@@ -46,4 +46,8 @@ ls /bin/*a* | wc -l = counts the number of lines that contain the letter a
 
 ls /bin/ | grep '^c' = all lines that start with letter c
 
-notes lab 2/13
+
+
+## notes lab 2/13
+- finding hidden files 
+-
