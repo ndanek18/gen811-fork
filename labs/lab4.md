@@ -32,6 +32,8 @@ What would the output look like if the wildcard could *not* be matched? Compare 
 
 ### EXERCISE 3: NAVIGATING PRACTICE
 Navigate to your home directory. From there, list the contents of the untrimmed_fastq directory.
+cd
+ls gen811-fork/shell_data/untrimmed_fastq/
 
 
 :::::::::::::::::::::::::::::::::::::::  challenge
@@ -45,6 +47,8 @@ what will `ls ../backup` display?
 2. `2012-12-01 2013-01-08 2013-01-27`
 3. `2012-12-01/ 2013-01-08/ 2013-01-27/`
 4. `original pnas_final pnas_sub`
+
+Answer: 4
 
 ![](fig/filesystem-challenge.svg){alt='File System for Challenge Questions'}
 
@@ -65,11 +69,11 @@ what will `ls ../backup` display?
 ### EXERCISE 4: FINDING HIDDEN DIRECTORIES
 First navigate to the shell_data directory. There is a hidden directory within this directory. Explore the options for ls to find out how to see hidden directories. List the contents of the directory and identify the name of the text file in that directory.
 
-
 Hint: hidden files and folders in Unix start with ., for example .my_hidden_directory
 
-What is the hidden file name in the hidden directory? .hidden
-code: ls -la
+What is the hidden file name in the hidden directory?
+ file name: youfoundit.text
+code: ls --all shows the hidden directory, then navigate into that directory and list what is in the directory 
 
 
 ### EXERCISE 5: HISTORY

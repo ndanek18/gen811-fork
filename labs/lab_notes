@@ -50,4 +50,7 @@ ls /bin/ | grep '^c' = all lines that start with letter c
 
 ## notes lab 2/13
 - finding hidden files 
--
+- la --all = to show hidden directories 
+- hidden directories will start with a period
+- ls -laF = to list long format of directory names 
+
