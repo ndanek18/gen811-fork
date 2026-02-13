@@ -78,18 +78,25 @@ code: ls --all shows the hidden directory, then navigate into that directory and
 
 ### EXERCISE 5: HISTORY
 Find the line number in your history for the command that listed all the .sh files in /usr/bin. Rerun that command.
+type "history" to see line numbers
+looking for: ls /usr/bin/*.sh
+line 160
 
-
+!160
 
 ### EXERCISE 6: FILE CONTENTS
 Print out the contents of the ~/shell_data/untrimmed_fastq/SRR097977.fastq file. What is the last line of the file?
-
+tail -n3 SRR097977.fastq (prints last 3 lines)
+C:CCC::CCCCCCCC<8?6A:C28C<608'&&&,'$
 
 ### EXERCISE 7: PATHS
 From your home directory, and without changing directories, use one short command to print the contents of all of the files in the ~/shell_data/untrimmed_fastq directory.
+less 
 
 ### EXERCISE 8: LESS
 What are the next three nucleotides (characters) after the first instance of the sequence quoted above?
+code: /TTTTT
+answer: CAC
 
 ### File Permissions Help
 The first part of the output for the `-l` flag gives you information about the file's current permissions. There are ten slots in the

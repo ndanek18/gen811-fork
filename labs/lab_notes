@@ -1,47 +1,48 @@
 ## notes lab 2/6
-pwd = print working directory, shows what folder you are working in
-ls = list everything in that folder
-clear = cleans up terminal
-if using quotes: make sure you remember to close them, 
+- pwd = print working directory, shows what folder you are working in
+- ls = list everything in that folder
+- clear = cleans up terminal
+- if using quotes: make sure you remember to close them, 
     or you can click control c to get out
-control c = cancels current command
-to go to shell data folder: cd shell_data/
-ls -F = only shows files in that folder that you can change directories into
-man ls lists the manual, hit q to get out
-ls -lrth = lists info with most recent files on the bottom
-hitting tab does autocomplete
-tab as much as possible to prevent typos!!
-head file_name = shows first few lines of file
-cd ../ takes you one step back up
-cd ../../ takes your two steps back up
-cd ../../../ takes you three steps back up out of that folder
+- control c = cancels current command
+- to go to shell data folder: cd shell_data/
+- ls -F = only shows files in that folder that you can change directories into
+- man ls lists the manual, hit q to get out
+- ls -lrth = lists info with most recent files on the bottom
+- hitting tab does autocomplete
+- tab as much as possible to prevent typos!!
+- head file_name = shows first few lines of file
+- tail file_name = shows you the end of the file
+- cd ../ takes you one step back up
+- cd ../../ takes your two steps back up
+- cd ../../../ takes you three steps back up out of that folder
 
-cd ~ brings you to home directory
-cd $HOME = can also bring you home
-echo $HOME = shows path of HOME
+- cd ~ brings you to home directory
+- cd $HOME = can also bring you home
+- echo $HOME = shows path of HOME
 
-pressing up arrow allows you to scroll through your previous lines
+- pressing up arrow allows you to scroll through your previous lines
 
-history = prints out all history of commands
+- history = prints out all history of commands
 
-grep = searches through file and returns only lines you're searching for
+- grep = searches through file and returns only lines you're searching for
 
-@ is a special character so need to put it in quotes 
+- @ is a special character so need to put it in quotes 
 
-grep '@' SRR097977.fastq = pulls out all of the lines in that file that start with @
-grep '@SRR' SRR097977.fastq = more defined searches
+- grep '@' SRR097977.fastq = pulls out all of the lines in that file that start with @
+- grep '@SRR' SRR097977.fastq = more defined searches
 (put what you are searching for right after grep, then the file name)
 
-grep '@SRR097977' SRR097977.fastq  > headerlines.txt = puts the headers all into a text file called headerlines
+- grep '@SRR097977' SRR097977.fastq  > headerlines.txt = puts the headers all into a text file called headerlines
 
-ls *fastq = list all files that have fastq at the end
-ls * txt = lists only txt files 
+- ls *fastq = list all files that have fastq at the end
+- ls * txt = lists only txt files 
 
-ls /bin
+- ls /bin
 
-wc = word count
+- wc = word count
 
-ls /bin/*o | wc -l = counts the number of lines that end in o
+- ls /bin/*o | wc -l = counts the number of lines that end in o
 ls /bin/*a* | wc -l = counts the number of lines that contain the letter a
 
 ls /bin/ | grep '^c' = all lines that start with letter c
@@ -53,4 +54,12 @@ ls /bin/ | grep '^c' = all lines that start with letter c
 - la --all = to show hidden directories 
 - hidden directories will start with a period
 - ls -laF = to list long format of directory names 
-
+- ls *fastq = lists just fastq files in that directory
+- ls /usr/bin/*sh = display everything that ends in sh
+- ls /usr/bin/*.sh = displays all .sh files 
+- history | grep "shell" = looks through history to find last time you wrote shell
+- history = shows line numbers 
+- less filename = lets you look at contents
+- mkdir backup = makes new directory called backup
+-cp SRR098026.fastq SRR098026-backup.fastq  = makes a copy of SRR098026 and puts it into backup
+- mv *backup.fastq backup/ = moves anything ending in backup.fastq into backup
