@@ -111,6 +111,7 @@ The pound sign is used for 'sections'. A single pound (or hashtag) in front of a
 2. cd ../../../
 3. cd $HOME
 4. cd /home/users/nnd1011 (absolute path)
+5. cd
 
 #### 2. How many programs in /bin 
 2. Do each of the following tasks from your current directory using a single ls command for each:
@@ -143,3 +144,4 @@ end with the letter o: ls /bin/*o | wc -l
 Contain the letter ‘a’ or the letter ‘c’ ____
 
 #### What command/commands would you use to find the line number in your history for the command that listed all the '.fastq' files using the absolute path. Paste your answer below.
+
