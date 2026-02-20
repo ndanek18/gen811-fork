@@ -85,13 +85,12 @@ talk more about this later).
 Change the permissions on all of your backup files to be write-protected.
 
 ```
-chmod -w SRR097977-backup.fastq 
-chmod -w SRR098026-backup.fastq 
-
+chmod ug+rwx SRR097977.fastq
+chmod ug+rwx SRR098026.fastq
 ```
 
 How do you know they are write protected?
-A:
+A: ls -l
 
 
 ### EXERCISE 5.3: CONDA ENVIRONMENTS AND PROGRAMS
