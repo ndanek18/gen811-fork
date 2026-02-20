@@ -50,6 +50,7 @@
 
 
 ## notes lab 2/13
+* wildcard 
 - finding hidden files 
 - la --all = to show hidden directories 
 - hidden directories will start with a period
@@ -73,3 +74,8 @@ Feb 20th notes
 -cp ogfilename newfilename = makes a copy of a file
 - chmod -w filename = takes away write privaleges 
 - rm -Rf backup/ = removes backup directory
+- conda environment only has the things you have installed 
+- conda activate genomics = gets you into conda environment 
+- conda deactivate gets you out
+- fastqc *.fastq*
+- unzip *zip = unzips all zip files 
