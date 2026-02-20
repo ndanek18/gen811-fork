@@ -34,13 +34,17 @@ Quality score:    01........11........21........31........41
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-*Warm ups: What is the last read in the SRR2584863_1.fastq file? How confident are you in this read?
-A: 
+*Warm ups: What is the last read in the SRR097977.fastq file? How confident are you in this read?
+A: GGGTAGGTATTACTCAGGACGAGGCGGTCGTGCCAC
+
+The beginning is high quality, the ending is lesser quality 
 
 How big are your fastqs? (Hint: Look at the options for the ls command to see how to show file sizes.)
 - hint, it involves 'ls'. See if you can do it using a relative and absolute path
 - another hint: There is an option to make it easy to read the file size. Use one of the two methods to find it
 A:
+ ls -l (displays size in bytes)
+ls -lh (displays size in human readable form)
 
 
 
@@ -54,7 +58,11 @@ Paste the code you used to do each step between the \'\'\' below:
 
 
 ```
-Replace this with code used
+rm -Rf backup/
+cp SRR097977.fastq SRR097977-backup.fastq
+cp SRR098026.fastq SRR098026-backup.fastq
+mkdir backup
+mv *backup.fastq backup/ 
 
 ```
 
@@ -67,6 +75,7 @@ that deal with your permissions (as the file owner).
 
 ![](fig/rwx_figure.svg){alt='Permissions breakdown'}
 
+
 Here the three positions that relate to the file owner are `rw-`. The `r` means that you have permission to read the file, the `w`
 indicates that you have permission to write to (i.e. make changes to) the file, and the third position is a `-`, indicating that you
 don't have permission to carry out the ability encoded by that space (this is the space where `x` or executable ability is stored, we'll
@@ -76,7 +85,8 @@ talk more about this later).
 Change the permissions on all of your backup files to be write-protected.
 
 ```
-Replace this with code
+chmod -w SRR097977-backup.fastq 
+chmod -w SRR098026-backup.fastq 
 
 ```
 

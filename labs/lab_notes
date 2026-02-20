@@ -43,9 +43,9 @@
 - wc = word count
 
 - ls /bin/*o | wc -l = counts the number of lines that end in o
-ls /bin/*a* | wc -l = counts the number of lines that contain the letter a
+- ls /bin/*a* | wc -l = counts the number of lines that contain the letter a
 
-ls /bin/ | grep '^c' = all lines that start with letter c
+- ls /bin/ | grep '^c' = all lines that start with letter c
 
 
 
@@ -61,5 +61,15 @@ ls /bin/ | grep '^c' = all lines that start with letter c
 - history = shows line numbers 
 - less filename = lets you look at contents
 - mkdir backup = makes new directory called backup
--cp SRR098026.fastq SRR098026-backup.fastq  = makes a copy of SRR098026 and puts it into backup
+-cp SRR098026.fastq SRR098026-backup.fastq  = makes a copy of SRR098026 
 - mv *backup.fastq backup/ = moves anything ending in backup.fastq into backup
+
+
+Feb 20th notes
+- absolute paths always start with /
+- ls -l (displays size in bytes)
+- ls -lh (displays size in human readable form)
+- chmod (change mode)
+-cp ogfilename newfilename = makes a copy of a file
+- chmod -w filename = takes away write privaleges 
+- rm -Rf backup/ = removes backup directory
