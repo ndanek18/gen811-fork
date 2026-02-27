@@ -40,7 +40,7 @@
 
 - ls /bin
 
-- wc = word count
+- wc filename = word count
 
 - ls /bin/*o | wc -l = counts the number of lines that end in o
 - ls /bin/*a* | wc -l = counts the number of lines that contain the letter a
@@ -66,7 +66,7 @@
 - mv *backup.fastq backup/ = moves anything ending in backup.fastq into backup
 
 
-Feb 20th notes
+Feb 20th notes (lab 5)
 - absolute paths always start with /
 - ls -l (displays size in bytes)
 - ls -lh (displays size in human readable form)
@@ -76,6 +76,19 @@ Feb 20th notes
 - rm -Rf backup/ = removes backup directory
 - conda environment only has the things you have installed 
 - conda activate genomics = gets you into conda environment 
-- conda deactivate gets you out
+- conda deactivate = gets you out
 - fastqc *.fastq*
 - unzip *zip = unzips all zip files 
+
+
+Feb 27th notes (lab 6)
+- ls -lrth
+-unzip file name = unzips .zip files
+-history = prints all of your previous code 
+- > = pipe to a new location
+-history > myrecenthist.txt = puts your history into a file called myrecenthist.txt
+-history > /home/users/nnd1011/myrecenthist.txt = moves this to your home directory
+- rm filename = deletes a file name 
+- history >> myrecentlist.txt = two >> appends (writes it two times over)
+- wc -l  filename = gives linecount of file
+
