@@ -76,9 +76,25 @@ grep NNN SRR098026.fastq | wc -l
 
 Print the file prefix of all of the `.txt` files in our current directory.
 
+
+
 ## Exercise 5
 
 After renaming the fastqs as demonstrated, remove `_2026` from all of the `.txt` files.
+
+for filenmae in *fastq
+do
+name = ${basename ${filename} .fastq}
+mv ${filename} ${name}_2026.txt
+done
+
+for filenmae in *fastq
+do
+ech -e "name = ${basename ${filename} .fastq}"
+echo -e "mv ${filename} ${name}_2026.txt"
+done
+
+echo tells you what it would run without actually running it 
 
 ## Exercise 6
 
