@@ -40,20 +40,37 @@ The four nucleotides that appear in DNA are abbreviated A, C, T and G. Unknown n
 1. Search for the sequence `GNATNACCACTTCC` in the `SRR098026.fastq` file.
   Have your search return all matching lines and the name (or identifier) for each sequence
   that contains a match.
+grep -B1 GNATNACCACTTCC SRR098026.fastq
+
+ 
 
 2. Search for the sequence `AAGTT` in both FASTQ files.
   Have your search return all matching lines and the name (or identifier) for each sequence
   that contains a match.
 
+ grep -B1 AAGTT  SRR098026.fastq SRR097977.fastq
+ or
+ grep -B1 AAGTT  *.fastq
+
 3. How do the search results differ when matching in one file vs. both files? If you wanted to keep the original FASTQ format, how would you get around this?
+
+grep -h --no-group-separator -B1 AAGTT  *.fastq
 
 ## Exercise 2
 
 How many sequences are there in `SRR098026.fastq`? Remember that every sequence is formed by four lines.
 
+grep '^@' *fastq | wc -l
+501
+
+(^@ counts lines starting with @)
+
 ## Exercise 3
 
 How many sequences in `SRR098026.fastq` contain at least 3 consecutive Ns?
+
+grep NNN SRR098026.fastq | wc -l
+249
 
 ## Exercise 4
 

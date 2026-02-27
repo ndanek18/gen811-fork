@@ -91,4 +91,15 @@ Feb 27th notes (lab 6)
 - rm filename = deletes a file name 
 - history >> myrecentlist.txt = two >> appends (writes it two times over)
 - wc -l  filename = gives linecount of file
+- when in doubt hit control c to exit out (for example if it stops letting you run code, orobably bc you forgot to give it a file name)
+- grep AGCT SRR098026_fastqc. = searches for AGCT in file
+- grep NNNNNNNNN SRR098026.fastq  | wc -l = gives you how many lines have that NNNNNNNN
+-  grep -B1 -A2 NNNNNNNNNN SRR098026.fastq  = adds in one line before and two lines after
+- head - 10 filename = just shows first ten lines
+- q = allows you to get out of a long file
+- grep -B1 -A2 NNNNNN SRR098026.fastq  | grep -v '^--' = removes lines that start with 2 dashes
+- grep -v = inverse grep, means "everything but"
+- grep -n -B1 -A2 NNNNNN SRR098026.fastq = the -n will print line numbers with the output
+- grep -A1 -h '^@SRR' *fastq | grep -v '^--' | grep -v '^@SRR'
+-^ is used to say "starts with"
 
