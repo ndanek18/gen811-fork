@@ -102,4 +102,34 @@ Feb 27th notes (lab 6)
 - grep -n -B1 -A2 NNNNNN SRR098026.fastq = the -n will print line numbers with the output
 - grep -A1 -h '^@SRR' *fastq | grep -v '^--' | grep -v '^@SRR'
 -^ is used to say "starts with"
+-grep '^@' *fastq | wc -l = select lines starting with @ for fastq files and count the numeber of lines
 
+
+
+#for loops
+
+for filename in *.fastq
+do 
+echo ${}
+done
+
+for filename in *.fastq
+do 
+wc -l ${fq}
+done
+
+will run twice since there's 2 fastq files 
+type into vs: for fq in *fastq (then hit enter)
+    next line: do
+        next line: wc -l ${fq}
+        next line: done
+        hit enter 
+
+
+#setting variables
+FOO='this-is-a-var'
+echo $FOO = returns what you put inside FOO
+
+ READ_QUL=32
+echo READ_QUL
+echo $READ_QUL

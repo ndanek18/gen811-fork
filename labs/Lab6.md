@@ -63,7 +63,7 @@ How many sequences are there in `SRR098026.fastq`? Remember that every sequence 
 grep '^@' *fastq | wc -l
 501
 
-(^@ counts lines starting with @)
+(select lines starting with @ for fastq files and count the numeber of lines)
 
 ## Exercise 3
 
