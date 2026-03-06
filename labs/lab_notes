@@ -133,3 +133,8 @@ echo $FOO = returns what you put inside FOO
  READ_QUL=32
 echo READ_QUL
 echo $READ_QUL
+
+March 6 notes (lab 7)
+-metadata = excel sheet of desciptors of your samples 
+-don't use special characters in your metadata file! (especially commas and spaces)
+-
