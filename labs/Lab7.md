@@ -96,10 +96,27 @@ This metadata describes information on the *Ara-3* clones and the columns repres
 ### Challenge
 
 Based on the metadata, can you answer the following questions?
+to download: wget link
 
-1. How many different generations exist in the data?
+
+1. How many different generations exist in the data? 25
+cut the second field out separated by commas filename
+cut -f2 -d',' Ecoli_metadata_composite.csv
+cut -f2 -d',' Ecoli_metadata_composite.csv | sort | uniq
+cut -f2 -d',' Ecoli_metadata_composite.csv | sort | uniq | grep -v 'gen' | wc -l
+
+to count how many times each generation shows up:
+Ecoli_metadata_composite.csv | sort | uniq -c | grep -v 'gen'
+
 2. How many rows and how many columns are in this data?
+12 columns, 
+head -n1 Ecoli_metadata_composite.csv | tr ',' '\n' | wc -l
+(give me only the first line, then transpose the commas into new lines, then counted those)
+
+
 3. How many citrate+ mutants have been recorded in **Ara-3**?
+
+
 4. How many hypermutable mutants have been recorded in **Ara-3**?
 
 

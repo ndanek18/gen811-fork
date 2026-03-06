@@ -137,4 +137,12 @@ echo $READ_QUL
 March 6 notes (lab 7)
 -metadata = excel sheet of desciptors of your samples 
 -don't use special characters in your metadata file! (especially commas and spaces)
--
+-metadat files are usually csv
+-use head or less to preview a file
+-wget link_to_file
+-curl link_to_file
+-how many different generations? cut -f2 -d',' Ecoli_metadata_composite.csv | sort | uniq | grep -v 'gen' | wc -l
+-how many times does each generation occur? Ecoli_metadata_composite.csv | sort | uniq -c | grep -v 'gen'
+-how many columns? head -n1 Ecoli_metadata_composite.csv | tr ',' '\n' | wc -l
+(give me only the first line, then transpose the commas into new lines, then counted those)
+-how many rows? 
