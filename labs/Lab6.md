@@ -78,7 +78,7 @@ grep NNN SRR098026.fastq | wc -l
 ## Exercise 4
 
 Print the file prefix of all of the `.txt` files in our current directory.
-
+for f in *.txt; do echo "${f%.txt}"; done
 
 
 ## Exercise 5
