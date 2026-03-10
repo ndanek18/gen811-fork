@@ -1,4 +1,4 @@
-## notes lab 2/6
+##lab 3 Feb 6 notes
 GENERAL INFO
 - clear = cleans up terminal
 - if using quotes: make sure you remember to close them, 
@@ -45,8 +45,8 @@ WILDCARD *
 - ls /bin/ | grep '^c' = all lines that start with letter c
 
 
-## notes lab 2/13
-* wildcard 
+## Lab 4 feb 13 notes
+* wildcard (used to search)
 - finding hidden files 
 - ls --all = to show hidden directories 
 - hidden directories will start with a period
@@ -62,7 +62,7 @@ WILDCARD *
 - mv *backup.fastq backup/ = moves anything ending in backup.fastq into backup
 
 
-Feb 20th notes (lab 5)
+##Lab 5 feb 20 notes
 - absolute paths always start with /
 - ls -l (displays size in bytes)
 - ls -lh (displays size in human readable form)
@@ -77,7 +77,9 @@ Feb 20th notes (lab 5)
 - unzip *zip = unzips all zip files 
 
 
-Feb 27th notes (lab 6)
+
+
+##Lab 6 Feb 27th notes 
 - ls -lrth
 -unzip file name = unzips .zip files
 -history = prints all of your previous code 
@@ -130,7 +132,7 @@ echo $FOO = returns what you put inside FOO
 echo READ_QUL
 echo $READ_QUL
 
-March 6 notes (lab 7)
+##Lab 7 March 6 notes 
 -metadata = excel sheet of desciptors of your samples 
 -don't use special characters in your metadata file! (especially commas and spaces)
 -metadat files are usually csv

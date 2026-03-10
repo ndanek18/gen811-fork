@@ -26,6 +26,8 @@ change
 
 ### EXERCISE 1: NAVIGATION PRACTICE
 Navigate to your untrimmed_fastq directory in one command
+use pwd to see absolute paths
+cd /home/users/nnd1011/gen811-fork/shell_data/untrimmed_fastq
 
 ### EXERCISE 2: WILDCARDS
 What would the output look like if the wildcard could *not* be matched? Compare the outputs
@@ -33,7 +35,7 @@ What would the output look like if the wildcard could *not* be matched? Compare 
 ### EXERCISE 3: NAVIGATING PRACTICE
 Navigate to your home directory. From there, list the contents of the untrimmed_fastq directory.
 cd
-ls gen811-fork/shell_data/untrimmed_fastq/
+ls /home/users/nnd1011/gen811-fork/shell_data/untrimmed_fastq
 
 
 :::::::::::::::::::::::::::::::::::::::  challenge
@@ -72,8 +74,12 @@ First navigate to the shell_data directory. There is a hidden directory within t
 Hint: hidden files and folders in Unix start with ., for example .my_hidden_directory
 
 What is the hidden file name in the hidden directory?
- file name: youfoundit.text
-code: ls --all shows the hidden directory, then navigate into that directory and list what is in the directory 
+code: ls --all (shows the directories, including the hidden one) 
+cd .hidden
+ls
+
+hidden directory name : .hidden
+hidden file name: youfoundit.text
 
 
 ### EXERCISE 5: HISTORY
@@ -120,6 +126,9 @@ Create a backup of each of your FASTQ files using cp. (Note: You’ll need to do
 Use a wildcard to move all of your backup files to a new backup directory.
 Change the permissions on all of your backup files to be write-protected.
 
+-cp SRR098026.fastq SRR098026-backup.fastq  = makes a copy of SRR098026 
+- mv *backup.fastq backup/ = moves anything ending in backup.fastq into backup
+- chmod -w filename = takes away write privaleges
 
 ### EXERCISE 10: PROGRAMS
 After loading a conda environment, where is the program 'fastqc' stored?
