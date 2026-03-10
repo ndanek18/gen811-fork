@@ -90,20 +90,21 @@ chmod ug+rwx SRR098026.fastq
 ```
 
 How do you know they are write protected?
-A: ls -l
-
+```
+ ls -l
+```
 
 ### EXERCISE 5.3: CONDA ENVIRONMENTS AND PROGRAMS
 After loading a conda environment, where is the program 'fastqc' stored?
+```
 conda activate genomics
-A:
 fastqc *.fastq*
 ls
 which fastqc
 
 /home/share/anaconda/envs/genomics/bin/fastqc
 
-
+```
 
 ### Explore the fastqc output. Which samples failed at least one of FastQC’s quality tests? What test(s) did those samples fail?
 
@@ -116,6 +117,7 @@ which fastqc
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+```
 mkdir fastqc_untrimmed_reads
 
 move all zip files and html files into this directory using the wildcard then open up a summary file 
@@ -123,3 +125,4 @@ move all zip files and html files into this directory using the wildcard then op
 mv *.zip fastqc_untrimmed_reads/
 mv *.html fastqc_untrimmed_reads/
 
+```
