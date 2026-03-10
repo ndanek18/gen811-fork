@@ -92,7 +92,11 @@ line 160
 
 ### EXERCISE 6: FILE CONTENTS
 Print out the contents of the ~/shell_data/untrimmed_fastq/SRR097977.fastq file. What is the last line of the file?
-tail -n3 SRR097977.fastq (prints last 3 lines)
+
+```
+tail -n3 SRR097977.fastq 
+```
+(prints last 3 lines)
 C:CCC::CCCCCCCC<8?6A:C28C<608'&&&,'$
 
 ### EXERCISE 7: PATHS
@@ -101,7 +105,9 @@ less
 
 ### EXERCISE 8: LESS
 What are the next three nucleotides (characters) after the first instance of the sequence quoted above?
-code: /TTTTT
+```
+ /TTTTT
+ ```
 answer: CAC
 
 ### File Permissions Help
@@ -126,10 +132,11 @@ Create a backup of each of your FASTQ files using cp. (Note: You’ll need to do
 Use a wildcard to move all of your backup files to a new backup directory.
 Change the permissions on all of your backup files to be write-protected.
 
+```
 -cp SRR098026.fastq SRR098026-backup.fastq  = makes a copy of SRR098026 
 - mv *backup.fastq backup/ = moves anything ending in backup.fastq into backup
 - chmod -w filename = takes away write privaleges
-
+```
 ### EXERCISE 10: PROGRAMS
 After loading a conda environment, where is the program 'fastqc' stored?
 

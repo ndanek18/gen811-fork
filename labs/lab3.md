@@ -107,14 +107,17 @@ The pound sign is used for 'sections'. A single pound (or hashtag) in front of a
 ### Complete the questions below when intrstructed. Push the changes to this document to recive credit for attending the lab
 
 #### 1. What are 3 ways to change directories to your home directory from the  untrimmed_fastq directory?
+```
 1. cd ~
 2. cd ../../../
 3. cd $HOME
 4. cd /home/users/nnd1011 (absolute path)
 5. cd
+```
 
 #### 2. How many programs in /bin 
 2. Do each of the following tasks from your current directory using a single ls command for each:
+
 ls /bin
     - List all of the files in /bin that start with the letter ‘c’. 
     ls c*
@@ -128,6 +131,7 @@ ls /bin
     - Bonus: List all of the files in /bin that contain the letter ‘a’ or the letter ‘c’.
 
 #### Answers here
+```
 Start with the letter c:
 ls c* | wc -l
 or ls /bin/c* | wc -l 
@@ -147,7 +151,10 @@ or ls /bin/*o | wc -l
 
 Contain the letter ‘a’ or the letter ‘c’ 
 ls *a* | ls *c*
+```
 
 #### What command/commands would you use to find the line number in your history for the command that listed all the '.fastq' files using the absolute path. Paste your answer below.
 
+```
 history | grep '/.fastq'
+```
