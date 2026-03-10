@@ -109,17 +109,19 @@ to count how many times each generation shows up:
 Ecoli_metadata_composite.csv | sort | uniq -c | grep -v 'gen'
 
 2. How many rows and how many columns are in this data?
-12 columns, 
+12 columns, 63 rows
 head -n1 Ecoli_metadata_composite.csv | tr ',' '\n' | wc -l
 (give me only the first line, then transpose the commas into new lines, then counted those)
 
+wc -l Ecoli_metadata_composite.csv 
 
-3. How many citrate+ mutants have been recorded in **Ara-3**?
+3. How many citrate+ mutants have been recorded in **Ara-3**? 10
 
+cut -f12 -d',' Ecoli_metadata_composite.csv | sort | uniq -c
 
-4. How many hypermutable mutants have been recorded in **Ara-3**?
-
-
+4. How many hypermutable mutants have been recorded in **Ara-3**? 6
+mutator is column 6
+cut -f6 -d',' Ecoli_metadata_composite.csv | sort | uniq -c
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 

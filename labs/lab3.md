@@ -118,7 +118,6 @@ The pound sign is used for 'sections'. A single pound (or hashtag) in front of a
 ls /bin
     - List all of the files in /bin that start with the letter ‘c’. 
     ls c*
-    or ls /bin/ | grep '^c'
 
     - List all of the files in /bin that contain the letter ‘a’.
     ls *a*
@@ -130,18 +129,25 @@ ls /bin
 
 #### Answers here
 Start with the letter c:
- ls /bin/c* | wc -l 
+ls c* | wc -l
+or ls /bin/c* | wc -l 
  or ls /bin/ | grep '^c' | wc -l
 94
 
-contain the letter a: ls /bin/*a* | wc -l
+contain the letter a: 
+ls *a* | wc -l
+or ls /bin/*a* | wc -l
 633
 
-end with the letter o: ls /bin/*o | wc -l
+end with the letter o: 
+ls *o | wc -l
+or ls /bin/*o | wc -l
 34
 
 
-Contain the letter ‘a’ or the letter ‘c’ ____
+Contain the letter ‘a’ or the letter ‘c’ 
+ls *a* | ls *c*
 
 #### What command/commands would you use to find the line number in your history for the command that listed all the '.fastq' files using the absolute path. Paste your answer below.
 
+history | grep '/.fastq'
